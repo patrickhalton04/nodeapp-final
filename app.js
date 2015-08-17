@@ -4,7 +4,11 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
 
+var port = 4000;
+
 var app = express();
+
+var db = require('./config/db');
 
 app.use('/www',express.static('www'));
 
@@ -27,4 +31,6 @@ app.get('/resume', function (req, res) {
 
 });
 
-app.listen(4000);
+
+console.log('listening on port:',port);
+app.listen(port);
