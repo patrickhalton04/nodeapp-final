@@ -3,10 +3,11 @@
  */
 var mongoose = require('mongoose');
 
+
+
 // Config Vars
 // =============================================================================
-var uriString = 'mongodb://localhost/default';
-
+var uriString = process.env.MONGOLAB_URI || 'mongodb://localhost/default';
 
 // Connection with minor error handling
 mongoose.connect(uriString, function(err, res){
