@@ -1,0 +1,11 @@
+{
+  "name": "port_redo",
+  "version": "1.0.0",
+  "description": "redoproj",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "patrick",
+  "license": "ISC"
+}
